@@ -1,199 +1,252 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hachi+Maru+Pop&family=Lobster&family=Lora:ital@1&family=Poppins:wght@300;400&display=swap');
 
-*{
-    top:0;
-margin:0;
-padding:0;
-font-family: 'Poppins', sans-serif;
+* {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.navbar{
+
+.navbar {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    height:50px;
+    height: 50px;
     font-size: 15px;
     background-color: white;
-    position:fixed;
-    width:100%;
+    position: fixed;
+    width: 100%;
 }
-.navbar .navlogo img{
-    height:20px;
-   
+
+.navbar .navlogo img {
+    height: 20px;
+
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
     list-style: none;
 }
-.navbar ul li{
-    margin-left:40px;
+
+.navbar ul li {
+    margin-left: 40px;
 }
-.navbar .navicon img{
-    height:20px;
-    padding-top:5px;
-    padding-left:25px;
+
+.navbar .navicon img {
+    height: 20px;
+    padding-top: 5px;
+    padding-left: 25px;
 }
-.notification{
-    padding-top:60px;
+
+.notification {
+    padding-top: 60px;
     text-align: center;
     align-items: center;
-    height:50px;
+    height: 50px;
     font-size: 15px;
     background-color: rgb(0, 0, 0);
-    color:white;
+    color: white;
 }
-.notification a{
-    color:blue;
+
+.notification a {
+    color: blue;
     text-decoration: none;
 }
-.backvideo video{
-    width:100%;
-    height: fit-content;
+
+.backvideo video {
+    width: 100%;
 }
-.productsection{
-    background-color: rgb(245,245,247);
-    margin-top:30px;
+
+.productsection {
+    background-color: rgb(245, 245, 247);
+    margin-top: 30px;
     padding-top: 40px;
-    padding-bottom:40px;
+    padding-bottom: 40px;
     text-align: center;
 }
-.productlist{
+
+.productlist {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
-.products{
+
+.products {
     padding-top: 40px;
     display: flex;
     flex-direction: column;
 }
-.products img{
-    height:120px;
+
+.products img {
+    height: 120px;
 }
-.products a{
+
+.products a {
     text-decoration: none;
-    padding-top:30px;
-    color:black;
+    padding-top: 30px;
+    color: black;
 }
-.cardcontainer{
+
+.cardcontainer {
     text-align: center;
-    height:700px;
-    padding-top:30px;
+    height: 700px;
+    padding-top: 30px;
 }
-.cardcontainer h1{
-    padding-top:20px;
-    padding-bottom:20px;
-    font-weight:bold;
+
+.cardcontainer h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
 }
-.cardsection{
-    padding-top:40px;
+
+.cardsection {
+    padding-top: 40px;
     display: flex;
-    justify-content:space-evenly ;
+    justify-content: space-evenly;
 }
-.cards{
-    background-color:rgb(250,250,250);
+
+.cards {
+    background-color: rgb(250, 250, 250);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width:370px;
-    padding-top:30px;
-    padding-bottom:30px;
-    border-radius:30px;
-    transition:0.7s;
+    width: 370px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    transition: 0.7s;
 }
-.cards img{
-    height:200px;
+
+.cards img {
+    height: 200px;
 }
-.cards:hover{
-    transform:scale(1.1);
+
+.cards:hover {
+    transform: scale(1.1);
     cursor: pointer;
 }
-.events{
+
+.events {
     background-color: black;
     color: white;
     text-align: center;
 }
-.events h1{
-    padding-top:20px;
-    padding-bottom:20px;
+
+.events h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.eventsimage{
+.eventsimage {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
-.eventimage img{
-    padding-top:40px;
-    height:400px
+
+.eventimage img {
+    padding-top: 40px;
+    height: 400px
 }
-.iphone{
+
+.iphone {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size:40px;
-    padding-bottom:30px;
+    font-size: 40px;
+    padding-bottom: 30px;
 }
-.iphone img{
+
+.iphone img {
     height: 600px;
 }
 
-.footer{
+.footer {
     padding-top: 20px;
-    background-color: rgb(245,245,247);
+    background-color: rgb(245, 245, 247);
 }
 
-.footertitle{
+.footertitle {
     display: flex;
-    padding-top:10px;
-    padding-left:30px;
+    padding-top: 10px;
+    padding-left: 30px;
 }
 
-.footertitle img{
-    height:20px;
+.footertitle img {
+    height: 20px;
     padding-right: 10px;
 }
 
-.storeitems{
+.storeitems {
     display: flex;
-    width:100%;
-   justify-content:space-evenly;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-.storeitems ul{
-    padding-top:30px;
-    list-style:none;
+.storeitems ul {
+    padding-top: 30px;
+    list-style: none;
 }
-.storeitems ul li{
-    padding-bottom:5px;
+
+.storeitems ul li {
+    padding-bottom: 5px;
     cursor: pointer;
 }
 
-.copyright{
-    padding-top:30px;
+.copyright {
+    padding-top: 30px;
     text-align: center;
-    padding-bottom:30px;
+    padding-bottom: 30px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width:620px) {
+   .navbar{
+    justify-content:space-around;
+   }
+    .navbar li{
+        display: none;
+    }
+    .productsection{
+        width:100%;
+    }
+    .products img{
+        height:40px;
+        width:40px;
+    }
+    .products{
+        font-size:10px;
+    }
+    .cardcontainer {
+        height: auto;
+    }
+    .cardsection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:10px;
+        padding-bottom: 10px;   
+     }
+    .cards{
+        width:350px;
+    }
+    .cards img{
+        height:200px;
+    }
+    .cards img{
+        height:200px;
+    }
+    .eventimage img {
+        padding-top: 40px;
+        height: 200px
+    }
+    .iphone img {
+        height: 400px;
+    }
+    .iphone h3{
+        font-size:30px;
+    }
+    .storeitems{
+        font-size: 10px;
+    }
+    .copyright{
+        font-size:12px;
+    }
+}
