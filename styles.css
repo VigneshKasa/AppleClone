@@ -19,10 +19,7 @@
     width: 100%;
 }
 
-.navbar .navlogo img {
-    height: 20px;
 
-}
 
 .navbar ul {
     display: flex;
@@ -31,6 +28,11 @@
 
 .navbar ul li {
     margin-left: 40px;
+}
+
+.navbar .navlogo img {
+    height: 20px;
+
 }
 
 .navbar .navicon img {
@@ -197,56 +199,128 @@
 
 
 @media only screen and (max-width:620px) {
-   .navbar{
-    justify-content:space-around;
-   }
-    .navbar li{
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navbar li {
         display: none;
     }
-    .productsection{
-        width:100%;
+
+
+    .products img {
+        height: 40px;
+        width: 40px;
     }
-    .products img{
-        height:40px;
-        width:40px;
+
+    .products {
+        font-size: 10px;
     }
-    .products{
-        font-size:10px;
-    }
+
     .cardcontainer {
         height: auto;
     }
-    .cardsection{
+
+    .cardsection {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap:10px;
-        padding-bottom: 10px;   
-     }
-    .cards{
-        width:350px;
+        gap: 10px;
+        padding-bottom: 10px;
     }
-    .cards img{
-        height:200px;
+
+    .cards {
+        width: 350px;
     }
-    .cards img{
-        height:200px;
+
+    .cards img {
+        height: 180px;
     }
+
     .eventimage img {
         padding-top: 40px;
         height: 200px
     }
+
     .iphone img {
         height: 400px;
     }
-    .iphone h3{
-        font-size:30px;
+
+    .iphone h3 {
+        font-size: 30px;
     }
-    .storeitems{
+
+    .storeitems {
         font-size: 10px;
     }
-    .copyright{
-        font-size:12px;
+
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:621px) and (max-width:1120px) {
+    .navbar {
+        justify-content: space-around;
+        height: 70px;
+    }
+
+    .navbar li {
+        display: none;
+    }
+
+
+
+    .products img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .products {
+        font-size: 15px;
+    }
+
+    .cardcontainer {
+        height: auto;
+    }
+
+    .cardsection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 10px;
+    }
+
+    .cards {
+        width: 550px;
+    }
+
+    .cards img {
+        height: 300px;
+    }
+
+
+    .eventimage img {
+        padding-top: 40px;
+        height: 200px
+    }
+
+    .iphone img {
+        height: 400px;
+    }
+
+    .iphone h3 {
+        font-size: 35px;
+    }
+
+    .storeitems {
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 12px;
     }
 }
