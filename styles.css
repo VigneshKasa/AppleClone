@@ -19,6 +19,9 @@
     width: 100%;
 }
 
+#navmenu {
+    display: none;
+}
 
 
 .navbar ul {
@@ -28,24 +31,38 @@
 
 .navbar ul li {
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .navbar .navlogo img {
     height: 20px;
+    cursor: pointer;
 
+}
+
+.navicon {
+    display: flex;
 }
 
 .navbar .navicon img {
     height: 20px;
     padding-top: 5px;
     padding-left: 25px;
-}
+    cursor: pointer;
 
+}
+#close{
+    display: none;
+}
 .notification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: 60px;
     text-align: center;
     align-items: center;
-    height: 50px;
+    height: 120px;
     font-size: 15px;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -198,15 +215,45 @@
 }
 
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:580px) {
     .navbar {
         justify-content: space-around;
+        /* padding:2px 30px; */
+        height: 50px;
     }
-
-    .navbar li {
+   .navicon{
+    gap:50px;
+   }
+    .navbar ul {
         display: none;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        width: 100%;
+        padding:10px 5px;
+        gap:20px;
     }
+    #close{
+        display: block;
+        height:30px;
+        width:30px;
+        position: relative;
+        left:80%;
+    }
+    .notification {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+        font-size: 9px;
+    }
+    
 
+    #navmenu {
+        display: block;
+        height: 25px;
+    }
 
     .products img {
         height: 40px;
@@ -260,17 +307,41 @@
     }
 }
 
-@media only screen and (min-width:621px) and (max-width:1120px) {
+@media only screen and (min-width:581px) and (max-width:1120px) {
     .navbar {
-        justify-content: space-around;
+        justify-content: space-between;
+        padding:2px 30px;
         height: 70px;
     }
-
-    .navbar li {
+    .navbar ul {
         display: none;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        width: 100%;
+        padding:10px 5px;
+        gap:20px;
     }
 
-
+    #navmenu {
+        display: block;
+        height: 25px;
+    }
+    #close{
+        display: block;
+        height:30px;
+        width:30px;
+        position: relative;
+        left:90%;
+    }
+    .notification {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+        font-size: 10px;
+    }
 
     .products img {
         height: 70px;
